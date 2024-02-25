@@ -71,3 +71,31 @@ toggleButtons.forEach((button) => {
     });
   });
 });
+
+
+// Carousel we work with:
+
+document.addEventListener("DOMContentLoaded", function () {
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const carouselInner = document.querySelector(".carousel-inner");
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  let currentIndex = 0;
+
+  nextBtn.addEventListener("click", function () {
+    if (currentIndex < carouselItems.length - 4) {
+      currentIndex += 4;
+      const offset = currentIndex * -25; // 25% de ancho por imagen
+      carouselInner.style.transform = `translateX(${offset}%)`;
+    }
+  });
+
+  prevBtn.addEventListener("click", function () {
+    if (currentIndex >= 4) {
+      currentIndex -= 4;
+      const offset = currentIndex * -25; // 25% de ancho por imagen
+      carouselInner.style.transform = `translateX(${offset}%)`;
+    }
+  });
+});
+
