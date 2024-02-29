@@ -55,8 +55,7 @@ toggleButtons.forEach((button) => {
 
     // get the image inside the button
     const iconPlus = document.querySelector(".icon-plus");
-    // const iconMinus = document.querySelector(".icon-minus");
-    // Get the parent element of the clicked icon;
+
 
     const iconM = button.querySelectorAll(".icon-minus");
 
