@@ -207,6 +207,21 @@ body {
   object-fit: cover;
 }
 
+/* amination for the picture of the carousel */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-slide .carousel-item img {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+
 .carousel-item {
   position: relative;
   overflow: hidden;
@@ -265,10 +280,10 @@ body {
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 10px;
-  animation: slideInText 1s ease-in-out forwards;
+  animation: slideInBtn 2s ease-in-out forwards;
 }
 
-@keyframes slideInText {
+@keyframes slideInBtn {
   0% {
     opacity: 0;
     transform: translateY(100%);
@@ -277,6 +292,11 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.carousel-text a:hover {
+  background-color: var(--fourth-color);
+  transition: 0.5s;
 }
 
 .carousel-text a {
