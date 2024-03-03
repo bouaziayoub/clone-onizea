@@ -6,42 +6,89 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="shortcut icon"
-      href="./assets/img/onizea-favicon.png"
+      href="./images/onizea-favicon.png"
       type="image/x-icon"
     />
     <title>Homepage - Onizea</title>
+
+    <style>
+    
+    </style>
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" id="top">
       <!-- This is the container -->
-      <div class="header">
-        <div class="container-header">
-          <div class="logo">
-            <a href="#"
-              ><img
-                src="https://onizea.com/wp-content/uploads/2023/09/logo_onizea_header.png"
-                alt="Logo- onizea"
-            /></a>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="icon-menu-hamburger">
+        <img src="./images/menu.png" alt="" />
+      </label>
+      <div class="logo-onizea-ham">
+        <a href="#"
+          ><img
+            src="./images/logo.png"
+            alt="Logo-onizea"
+        /></a>
+      </div>
+      
+      <div class="menu-container">
+        <div class="menu">
+          <div class="container-menu-nav">
+            <div class="logo">
+              <a href="#"
+                ><img
+                  src="./images/logo.png"
+                  alt="Logo-onizea"
+              /></a>
+            </div>
+            
+            <div class="navbar">
+              <div class="about">
+                <a href="#about">About Us</a>
+              </div>
+              <div class="services">
+                <a href="#services">Services</a>
+              </div>
+              <div class="talent">
+                <a href="#talent">Talent</a>
+              </div>
+              <div class="contact">
+                <a href="#contact"> <span> Contact Us</span></a>
+              </div>
+              <div class="languages">
+                <a href="#español"><img src="./images/es.svg" alt="" /></a>
+                <a href="#portugues"><img src="./images/pt.svg" alt="" /></a>
+                <a href="#ingles"><img src="./images/en.svg" alt="" /></a>
+                <a href="#catalan"><img src="./images/ca.svg" alt="" /></a>
+              </div>
+            </div>
           </div>
-          <div class="navbar">
-            <div class="about">
-              <a href="#about">About Us</a>
+        </div>
+        <div class="menu-hamburguesa">
+          <div class="menu-hamburguesa-container">
+            <div class="menu-hamburguesa-header">
+              <div class="menu-hamburguesa-close"></div>
             </div>
-            <div class="services">
-              <a href="#services">Services</a>
-            </div>
-            <div class="talent">
-              <a href="#talent">Talent</a>
-            </div>
-            <div class="contact">
-              <a href="#contact"> <span> Contact Us</span></a>
-            </div>
-            <div class="languages">
-              <a href="#español"><img src="./assets/img/es.svg" alt="" /></a>
-              <a href="#portugues"><img src="./assets/img/pt.svg" alt="" /></a>
-              <a href="#ingles"><img src="./assets/img/en.svg" alt="" /></a>
-              <a href="#catalan"><img src="./assets/img/ca.svg" alt="" /></a>
+            <div class="menu-hamburguesa-nav">
+              <div class="menu-hamburguesa-about">
+                <a href="#about">About Us</a>
+              </div>
+              <div class="menu-hamburguesa-services">
+                <a href="#services">Services</a>
+              </div>
+              <div class="menu-hamburguesa-talent">
+                <a href="#talent">Talent</a>
+              </div>
+              <div class="menu-hamburguesa-contact">
+                <a href="#contact">Contact Us</a>
+              </div>
+              <div class="menu-hamburguesa-languages">
+                <a href="#español"><img src="./images/es.svg" alt="" /></a>
+                <a href="#portugues"><img src="./images/pt.svg" alt="" /></a>
+                <a href="#ingles"><img src="./images/en.svg" alt="" /></a>
+                <a href="#catalan"><img src="./images/ca.svg" alt="" /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -53,7 +100,7 @@
       <div class="carousel-container">
         <div class="carousel-slide">
           <div class="carousel-item">
-            <img src="./assets/img/slide2-home.jpg" alt="Imagen 1" />
+            <img src="./images/slide2-home.jpg" alt="Imagen 1" />
             <div class="carousel-text">
               <h2>Crazy about technology</h2>
               <p>
@@ -65,7 +112,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/slide1-home.jpg" alt="Imagen 2" />
+            <img src="./images/slide1-home.jpg" alt="Imagen 2" />
             <div class="carousel-text">
               <h2>Crazy about technology</h2>
               <p>
@@ -77,7 +124,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/slide3-home.jpg" alt="Imagen 3" />
+            <img src="./images/slide3-home.jpg" alt="Imagen 3" />
             <div class="carousel-text">
               <!-- Text for Image 3 -->
               <h2>Crazy about technology</h2>
@@ -91,10 +138,10 @@
           </div>
         </div>
         <button class="prev-btn">
-          <img src="./assets/img/arrow.png" alt="" />
+          <img src="./images/arrow.png" alt="" />
         </button>
         <button class="next-btn">
-          <img src="./assets/img/arrow.png" alt="" />
+          <img src="./images/arrow.png" alt="" />
         </button>
       </div>
       <!-- End of carousel -->
@@ -104,17 +151,17 @@
       <div class="whatWeDo">
         <div class="whatWeDo-container">
           <div class="whatWeDo-title">
-            <h2>¿Qué hacemos?</h2>
+            <h2>What do we do?</h2>
           </div>
           <ul>
             <li>
               <div class="toggle-details">
                 <div>
-                  <h2>Consultoría</h2>
+                  <h2>Consulting services</h2>
                 </div>
                 <div class="icons">
-                  <img class="icon-plus" src="./assets/img/plus.png" alt="" />
-                  <img class="icon-minus" src="./assets/img/minus.png" alt="" />
+                  <img class="icon-plus" src="./images/plus.png" alt="show details" />
+                  <img class="icon-minus" src="./images/minus.png" alt="hide details" />
                 </div>
               </div>
               <div class="details">
@@ -141,8 +188,8 @@
               <div class="toggle-details">
                 <div><h2>Development services</h2></div>
                 <div class="icons">
-                  <img class="icon-plus" src="./assets/img/plus.png" alt="" />
-                  <img class="icon-minus" src="./assets/img/minus.png" alt="" />
+                  <img class="icon-plus" src="./images/plus.png" alt="" />
+                  <img class="icon-minus" src="./images/minus.png" alt="" />
                 </div>
               </div>
 
@@ -174,9 +221,9 @@
                   <h2>IT Services</h2>
                 </div>
 
-                <div>
-                  <img class="icon-plus" src="./assets/img/plus.png" alt="" />
-                  <img class="icon-minus" src="./assets/img/minus.png" alt="" />
+                <div class="icons">
+                  <img class="icon-plus" src="./images/plus.png" alt="" />
+                  <img class="icon-minus" src="./images/minus.png" alt="" />
                 </div>
               </div>
 
@@ -216,7 +263,7 @@
           <p class="author">Alan Turing</p>
         </div>
         <img
-          src="./assets/img/background-world.jpg"
+          src="./images/background-world.jpg"
           alt="world img"
           width="100%"
           height="5%"
@@ -235,7 +282,7 @@
           <div class="whyOnizea-item">
             <div>
               <img
-                src="./assets/img/developer.png"
+                src="./images/developer.png"
                 alt="icon Low Code First Technolgy"
               />
             </div>
@@ -251,7 +298,7 @@
           <div class="whyOnizea-item">
             <div class="icon-onizea"></div>
             <img
-              src="./assets/img/two-arrows.png"
+              src="./images/two-arrows.png"
               alt="icon Continuous Improvement"
             />
             <h3>Continuous Improvement</h3>
@@ -265,7 +312,7 @@
           <div class="whyOnizea-item">
             <div class="icon-onizea">
               <img
-                src="./assets/img/bulbo.png"
+                src="./images/bulbo.png"
                 alt="icon Smart Agile Methodology"
               />
             </div>
@@ -308,12 +355,12 @@
               </p>
             </div>
 
-            <div>
+            <!-- <div class="">
               <img
-                src="./assets/img/crazy_about_technology.png"
+                src="./images/crazy_about_technology.png"
                 alt="crazy about technology"
               />
-            </div>
+            </div> -->
           </div>
 
           <!-- contact form -->
@@ -386,10 +433,10 @@
             </div>
             <div class="btn">
               <button id="prevBtn">
-                <img src="./assets/img/arrow.png" alt="" />
+                <img src="./images/arrow.png" alt="" />
               </button>
               <button id="nextBtn">
-                <img src="./assets/img/arrow.png" alt="" />
+                <img src="./images/arrow.png" alt="" />
               </button>
             </div>
           </div>
@@ -397,44 +444,33 @@
             <div class="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item">
-                  <img src="./assets/img/logo_smt.png" alt="client 1" />
+                  <img src="./images/cuatrecasas.png" alt="client 1" />
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/img/logo_itec.png" alt="client 2" />
+                  <img src="./images/logo_sh-1.png" alt="client 2" />
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/img/logo_mst.png" alt="client 3" />
+                  <img src="./images/logo_tecno_onizea.png" alt="client 3" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="./assets/img/logo_gferrocarril.png"
-                    alt="client 4"
-                  />
+                  <img src="./images/logo_fundesplai.png" alt="client 4" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="./assets/img/logo_gferrocarril.png"
-                    alt="client 5"
-                  />
+                  <img src="./images/logo_smt.png" alt="client 5" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="./assets/img/logo_gferrocarril.png"
-                    alt="client 6"
-                  />
+                  <img src="./images/logo_itec.png" alt="client 6" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="./assets/img/logo_gferrocarril.png"
-                    alt="client 7"
-                  />
+                  <img src="./images/logo_mst.png" alt="client 7" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="./assets/img/logo_gferrocarril.png"
-                    alt="client 8"
-                  />
+                  <img src="./images/logo_gferrocarril.png" alt="client 8" />
                 </div>
+                <div class="carousel-item">
+                  <img src="./images/logo_fain.png" alt="client 9" />
+                </div>
+                
               </div>
             </div>
           </div>
@@ -445,27 +481,27 @@
       <div class="footer">
         <div class="footer-container">
           <div class="footer-logo">
-            <img src="./assets/img/logo_onizea_footer.png" alt="logo-onizea" />
+            <img class="logo-ftr" src="./images/logo_onizea_footer.png" alt="logo-onizea" />
             <h3>Crazy about technology</h3>
             <p>“With us, like at home”</p>
             <div class="footer-social">
               <a href="#linkedin"
                 ><img
-                  src="./assets/img/linkedin.png"
+                  src="./images/linkedin.png"
                   alt="linkedin"
                   width="20"
                   height="20"
               /></a>
               <a href="#twitter"
                 ><img
-                  src="./assets/img/twitter.png"
+                  src="./images/twitter.png"
                   alt="twitter"
                   width="20"
                   height="20"
               /></a>
               <a href="#instagram"
                 ><img
-                  src="./assets/img/instagram.png"
+                  src="./images/instagram.png"
                   alt="insta"
                   width="20"
                   height="20"
@@ -474,7 +510,7 @@
             <div class="tecnotramit">
               <span>by</span>
               <img
-                src="./assets/img/logo_tecnotramit_footer.png"
+                src="./images/logo_tecnotramit_footer.png"
                 alt=""
                 width="120"
               />
@@ -507,11 +543,7 @@
       <!-- End of footer-nav -->
       <div class="backToTop">
         <a href="#top"
-          ><img
-            src="./assets/img/arrow.png "
-            alt="back-top"
-            width="20"
-            height="20"
+          ><img src="./images/arrow.png " alt="back-top" width="20" height="20"
         /></a>
       </div>
     </div>
